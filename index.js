@@ -1,4 +1,5 @@
-const express = require('express');
+//const app = require('express');
+const app= express();
 const port = 8000;
 const router = express.Router();
 router.get('/', (request, response)=> response.send('hello from skillsoft1'));
