@@ -2,6 +2,8 @@ const express = require('express');
 const port = 8000;
 const app = express();
 const router = express.Router();
+app.use(express.json());
+app.use(express.urlencoded({extended:false}));
 router.get('/', (request, response)=> response.send('hello from skillsoft...'));
 router.post('/addemployee', (request, response) => {
 let empName = request.body.empName;
